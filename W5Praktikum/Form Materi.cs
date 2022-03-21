@@ -20,7 +20,6 @@ namespace W5Praktikum
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
-
             ListBoxInput.Items.Add(textBoxInput.Text);
             textBoxInput.Text = "";
             textBoxInput.Focus();
@@ -49,11 +48,7 @@ namespace W5Praktikum
                 {
                     labelShowOutput.ForeColor = Color.Blue;
                 }
-            }
-            else if (checkBoxAktif.Checked ==false)
-            {
-                labelShowOutput.ForeColor = Color.Black;
-            }
+            }            
         }
 
         private void radioButtonWarnaBiru_CheckedChanged(object sender, EventArgs e)
@@ -68,11 +63,7 @@ namespace W5Praktikum
                 {
                     labelShowOutput.ForeColor = Color.Blue;
                 }
-            }
-            else if (checkBoxAktif.Checked == false)
-            {
-                labelShowOutput.ForeColor = Color.Black;
-            }
+            }            
         }
 
         private void checkBoxAktif_CheckedChanged(object sender, EventArgs e)
